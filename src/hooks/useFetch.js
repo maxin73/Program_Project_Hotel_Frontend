@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const useFetch = (endpoint) => {
-  const baseUrl = "http://localhost:8800/api";
+  // const baseUrl = "http://localhost:8800/api";
+  const baseUrl = "https://program-project-hotel-backend.onrender.com";
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);

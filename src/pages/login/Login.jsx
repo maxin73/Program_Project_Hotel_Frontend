@@ -23,7 +23,8 @@ const Login = () => {
     dispatch({ type: "LOGIN_START" });
     try {
       // console.log(credentials);
-      const res = await axios.post("http://localhost:8800/api/auth/login", credentials);
+      // const res = await axios.post("http://localhost:8800/api/auth/login", credentials);
+      const res = await axios.post("https://program-project-hotel-backend.onrender.com/auth/login", credentials);
       // const res = await axios.post("/auth/login", credentials);
       console.log(res.data);
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
