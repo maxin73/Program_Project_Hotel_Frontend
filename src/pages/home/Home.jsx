@@ -16,8 +16,8 @@ const Home = () => {
         <Featured />
         <h1 className="homeTitle">Browse by property type</h1>
         <PropertyList />
-        <h1 className="homeTitle">Home guests love</h1>
-        <FeaturedProperties />
+        {/* <h1 className="homeTitle">Home guests love</h1>
+        <FeaturedProperties /> */}
         <MailList />
         <Footer />
       </div>
